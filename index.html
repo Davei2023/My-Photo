@@ -12,40 +12,162 @@
     <link rel="stylesheet" href="./css/file.css">
 </head>
 <body>
-    <!--  -->
-    <header>
-
-    </header>
-    <!--  -->
-    <main>
-        <!--  -->
-        <section>
-
+        <!-- Секция Hero -->
+        <section id="hero-section" class="section-hero">
+            <div class="hero-content">
+                <h1>Добро пожаловать на мой сайт!</h1>
+                <p>Меня зовут Иван Иванов, я дизайнер и разработчик.</p>
+                <a href="#about-section">Подробнее</a>
+            </div>
         </section>
-        <!--  -->
-        <section>
-
+    
+        <!-- Секция Обо мне -->
+        <section id="about-section" class="section-about">
+            <div class="container">
+                <h2>Обо мне</h2>
+                <p>Я — опытный веб-дизайнер, работаю в индустрии уже более 5 лет. Моя цель — создавать удобные и красивые сайты для клиентов.</p>
+            </div>
         </section>
-        <!--  -->
-        <section>
-
+    
+        <!-- Секция Портфолио -->
+        <section id="portfolio-section" class="section-portfolio">
+            <div class="container">
+                <h2>Мое портфолио</h2>
+                <div class="portfolio-item">
+                    <img src="portfolio-1.jpg" alt="Проект 1">
+                    <img src="portfolio-2.jpg" alt="Проект 2">
+                    <img src="portfolio-3.jpg" alt="Проект 3">
+                </div>
+            </div>
         </section>
-        <!--  -->
-        <section>
-
+    
+        <!-- Секция Услуги -->
+        <section id="services-section" class="section-services">
+            <div class="container">
+                <h2>Услуги</h2>
+                <p>Я предлагаю услуги веб-дизайна, разработки и поддержки сайтов.</p>
+            </div>
         </section>
-        <!--  -->
-        <section>
-            
+    
+        <!-- Секция Мастер-классы -->
+        <section id="workshops-section" class="section-workshops">
+            <div class="container">
+                <h2>Мастер-классы</h2>
+                <p>Я регулярно провожу мастер-классы по веб-дизайну и разработке.</p>
+            </div>
         </section>
-    </main>
-        <!--  -->
-    <footer>
-
-    </footer>
-    <!--  -->
-    <div class="backdrop is-hiden">
-
-    </div>
+    
+        <!-- Секция Отзывы -->
+        <section id="testimonials-section" class="section-testimonials">
+            <div class="container">
+                <h2>Отзывы</h2>
+                <div class="testimonial-item">
+                    <p>"Отличная работа, все было выполнено вовремя!"</p>
+                    <p class="client-name">— Сергей, клиент</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Очень доволен результатом, сайт получился именно таким, как я хотел!"</p>
+                    <p class="client-name">— Екатерина, клиент</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Секция Цены -->
+        <section id="prices-section" class="section-prices">
+            <div class="container">
+                <h2>Цены</h2>
+                <ul>
+                    <li>Разработка сайта.</li>
+                    <li>Поддержка сайта:</li>
+                    <li>Дизайн.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <!-- Секция Блог -->
+        <section id="blog-section" class="section-blog">
+            <div class="container">
+                <h2>Блог</h2>
+                <div class="blog-posts">
+                    <div class="post">
+                        <h3>Как выбрать CMS для сайта</h3>
+                        <p>Обзор популярных CMS, их преимущества и недостатки...</p>
+                    </div>
+                    <div class="post">
+                        <h3>5 ошибок, которых стоит избегать при создании сайта</h3>
+                        <p>Как избежать распространённых ошибок при создании сайта...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Секция Галерея -->
+        <section id="gallery-section" class="section-gallery">
+            <div class="container">
+                <h2>Галерея</h2>
+                <div class="gallery-images">
+                    <img src="gallery-1.jpg" alt="Галерея 1">
+                    <img src="gallery-2.jpg" alt="Галерея 2">
+                    <img src="gallery-3.jpg" alt="Галерея 3">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Секция FAQ -->
+        <section id="faq-section" class="section-faq">
+            <div class="container">
+                <h2>FAQ</h2>
+                <div class="faq-item">
+                    <h3>Как заказать сайт?</h3>
+                    <p>Вы можете связаться со мной через форму на странице "Контакты" или написать на email.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Как долго будет разрабатываться мой сайт?</h3>
+                    <p>Сроки зависят от сложности проекта, но обычно это занимает от 1 до 3 месяцев.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Секция Контакты -->
+        <section id="contact-section" class="section-contact">
+            <div class="container">
+                <h2>Контакты</h2>
+                <form class="contact-form">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="email">Ваш Email</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message"></textarea>
+                    
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Секция Подписка -->
+        <section id="subscribe-section" class="section-subscribe">
+            <div class="container">
+                <h2>Подписка</h2>
+                <form>
+                    <input type="email" placeholder="Введите ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Секция Социальные сети -->
+        <section id="social-section" class="section-social">
+            <div class="container">
+                <h2>Следите за нами</h2>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
 </body>
 </html>
