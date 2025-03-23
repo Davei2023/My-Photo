@@ -1,3 +1,4 @@
+/* Определение цветовых переменных */
 :root {
   --color-primary: #2E2F42;
   --color-secondary: #f4f4fd;
@@ -14,191 +15,352 @@
 }
 
 /* Общие стили */
-* {
+body {
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  background-color: var(--color-dairy);
+  color: var(--color-set);
 }
 
-body {
-  background-color: var(--color-primary);
-  color: var(--color-non);
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-non);
-}
-
-/* Стили для секции Hero */
+/* Секция Hero */
 .section-hero {
-  background-image: url('images/hero-bg.jpg'); /* Добавьте ваше изображение для фона */
+  background-image: url('../images/foto-my.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-non);
   text-align: center;
+}
+
+.section-hero h1 {
+  font-family: 'Big Shoulders', sans-serif;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.section-hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.section-hero a {
+  font-size: 1.2em;
+  color: var(--color-von);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid var(--color-von);
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section-hero a:hover {
+  background-color: var(--color-von);
   color: var(--color-non);
 }
 
-/* Стили для секции Обо мне */
+/* Секция Обо мне */
 .section-about {
-  background-image: url('images/about-bg.jpg'); /* Добавьте изображение для фона */
+  background-image: url('../images/foto-1.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
+  color: var(--color-non);
+  text-align: center;
 }
 
 .section-about h2 {
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
 .section-about p {
-  font-size: 1.1rem;
-  text-align: center;
-  margin-bottom: 30px;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Стили для секции Портфолио */
+/* Секция Портфолио */
 .section-portfolio {
-  background-image: url('images/portfolio-bg.jpg'); /* Добавьте изображение для фона */
+  background-image: url('../images/foto-2.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
+  text-align: center;
 }
 
-.section-portfolio .portfolio-item {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  margin-top: 20px;
+.section-portfolio h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
-.section-portfolio img {
-  width: 30%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-/* Стили для секции Отзывы */
+.portfolio-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Секция Услуги */
+.section-services {
+  background-image: url('../images/foto-3.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: var(--color-non);
+  text-align: center;
+}
+
+.section-services h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section-services p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Секция Мастер-классы */
+.section-workshops {
+  background-image: url('../images/foto-4.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: var(--color-non);
+  text-align: center;
+}
+
+.section-workshops h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section-workshops p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Секция Отзывы */
 .section-testimonials {
-  background-image: url('images/testimonials-bg.jpg'); /* Добавьте изображение для фона */
+  background-image: url('../images/foto-5.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
+  color: var(--color-non);
+  text-align: center;
+}
+
+.section-testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
 .testimonial-item {
   margin-bottom: 30px;
-  padding: 20px;
-  background-color: var(--color-dairy);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .client-name {
-  font-size: 1rem;
+  font-size: 1.1em;
   font-weight: bold;
-  color: var(--color-ger);
-  text-align: right;
 }
 
-/* Стили для секции Галерея */
-.section-gallery {
-  background-image: url('images/gallery-bg.jpg'); /* Добавьте изображение для фона */
+/* Секция Цены */
+.section-prices {
+  background-image: url('../images/foto-6.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
+  text-align: center;
+  color: var(--color-non);
 }
 
-.section-gallery .gallery-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  margin-top: 20px;
+.section-prices h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
-.section-gallery img {
-  width: 30%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.section-prices ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Стили для секции Блог */
+.section-prices li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Секция Блог */
 .section-blog {
-  background-image: url('images/blog-bg.jpg'); /* Добавьте изображение для фона */
+  background-image: url('../images/foto-7.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
+  text-align: center;
 }
 
-.section-blog .blog-posts {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.section-blog h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
-.section-blog .post h3 {
-  font-size: 1.5rem;
-  color: var(--color-von);
+.blog-posts .post {
+  margin-bottom: 30px;
 }
 
-.section-blog .post p {
-  font-size: 1rem;
-  color: var(--color-light-slate);
+.blog-posts .post h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-/* Стили для формы и кнопок */
+.blog-posts .post p {
+  font-size: 1.1em;
+}
+
+/* Секция Галерея */
+.section-gallery {
+  background-image: url('../images/foto-8.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-gallery h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.gallery-images img {
+  width: 30%;
+  height: auto;
+  margin: 0 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Секция FAQ */
+.section-faq {
+  background-image: url('../images/foto-10.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: var(--color-non);
+  text-align: center;
+}
+
+.section-faq h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.8em;
+}
+
+.faq-item p {
+  font-size: 1.2em;
+}
+
+/* Секция Контакты */
+.section-contact {
+  background-image: url('../images/foto-11.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: var(--color-non);
+  text-align: center;
+}
+
+.section-contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
 .contact-form input,
-.contact-form textarea,
-.contact-form button {
+.contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
-  font-size: 1rem;
-  border-radius: 5px;
+  font-size: 1.1em;
+  margin-bottom: 20px;
   border: 1px solid var(--color-set);
+  border-radius: 5px;
 }
 
 .contact-form button {
+  padding: 10px 20px;
+  font-size: 1.2em;
   background-color: var(--color-von);
   color: var(--color-non);
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: var(--color-web);
+  background-color: var(--color-stile);
 }
 
-/* Стили для секции Подписка */
+/* Секция Подписка */
 .section-subscribe {
-  background-image: url('images/subscribe-bg.jpg'); /* Добавьте изображение для фона */
+  background-image: url('../images/foto-2.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
+  text-align: center;
 }
 
-.section-subscribe form {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.section-subscribe h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
-.section-subscribe input {
+.section-subscribe form input {
+  width: 300px;
   padding: 10px;
-  width: 80%;
+  font-size: 1.1em;
+  margin-right: 10px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid var(--color-set);
 }
 
-.section-subscribe button {
+.section-subscribe form button {
   padding: 10px 20px;
+  font-size: 1.2em;
   background-color: var(--color-von);
   color: var(--color-non);
   border: none;
@@ -206,40 +368,42 @@ a {
   cursor: pointer;
 }
 
-.section-subscribe button:hover {
-  background-color: var(--color-web);
+.section-subscribe form button:hover {
+  background-color: var(--color-stile);
 }
 
-/* Стили для секции Социальные сети */
+/* Секция Социальные сети */
 .section-social {
-  background-image: url('images/social-bg.jpg'); /* Добавьте изображение для фона */
+  background-image: url('../images/foto-5.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 0;
+  text-align: center;
 }
 
-.section-social .social-links {
+.section-social h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  list-style: none;
 }
 
-.section-social .social-links li a {
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  font-size: 1.5em;
+  color: var(--color-non);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
   color: var(--color-von);
-  font-size: 1.5rem;
-}
-
-.section-social .social-links li a:hover {
-  color: var(--color-ger);
-}
-
-/* Анимация на фоне */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.section {
-  animation: fadeIn 1s ease-in;
 }
